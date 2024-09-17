@@ -1,0 +1,16 @@
+.actionButton {
+    color: white;
+    background-color: black;
+    border: rgb(0, 255, 0) solid 2px;
+    margin-right: 20px;
+
+    padding: 10px 20px;
+}
+
+.actionButton:first-child {
+    margin-bottom: 20px;
+}
+
+.actionButton:hover {
+    border: white solid 2px;
+}

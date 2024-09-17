@@ -1,0 +1,12 @@
+.card {
+    border: white solid 2px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,8 +1,18 @@
+import "./MissionAction.css";
+
 const MissionAction = ({ missionId, updateStatus }) => {
   return (
     <>
-      <button onClick={() => updateStatus(missionId, "Active")}>Launch</button>
-      <button onClick={() => updateStatus(missionId, "Completed")}>
+      <button
+        className="actionButton"
+        onClick={() => updateStatus(missionId, "Active")}
+      >
+        Launch
+      </button>
+      <button
+        className="actionButton"
+        onClick={() => updateStatus(missionId, "Completed")}
+      >
         {" "}
         complete
       </button>

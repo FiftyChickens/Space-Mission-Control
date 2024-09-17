@@ -1,0 +1,11 @@
+.buttonFilters {
+    border: solid rgb(255, 0, 0) 2px;
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
+.buttonFilters:hover {
+    border: rgb(255, 255, 255) solid 2px;
+}

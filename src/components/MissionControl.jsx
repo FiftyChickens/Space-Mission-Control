@@ -2,6 +2,7 @@ import MissionAction from "./MissionAction";
 import MissionCard from "./MissionCard";
 import MissionFilter from "./MissionFilter";
 import { useState } from "react";
+import "./MissionControl.css";
 
 const MissionControl = ({ initialMission }) => {
   const defaultFilter = "All";
@@ -26,20 +27,21 @@ const MissionControl = ({ initialMission }) => {
     <div>
       <h1>Space Mission Control</h1>
 
-      <div> 
-        <MissionFilter setFilter={setFilter} /> {/* changes filter based on button clicked */ }
+      <div>
+        <MissionFilter setFilter={setFilter} />{" "}
+        {/* changes filter based on button clicked */}
       </div>
 
       {filteredMissions.map((mission) => {
         const { id, name, status, crew } = mission;
 
         return (
-          <div key={id}>
+          <div key={id} className="card">
             <div>
               <MissionCard name={name} status={status} crew={crew} />
             </div>
 
-            <div>
+            <div className="action">
               <MissionAction
                 missionId={id}
                 updateStatus={updateMissionStatus}
